@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -34,6 +35,7 @@ public class Pantalla3 extends AppCompatActivity {
               }
               ((TextView) convertView.findViewById(R.id.text_name)).setText(getItem(pos).nombreUser);
               ((TextView) convertView.findViewById(R.id.text_tries)).setText(Integer.toString(getItem(pos).numFallos));
+              ((ImageView) convertView.findViewById(R.id.imageView2)).setImageURI(getItem(pos).photoPath);
               return convertView;
           }
         };

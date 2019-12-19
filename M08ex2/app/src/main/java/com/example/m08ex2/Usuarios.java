@@ -1,14 +1,17 @@
 package com.example.m08ex2;
 
+import android.net.Uri;
+
 public class Usuarios implements Comparable<Usuarios>{
     public String nombreUser;
     public int numFallos;
+    public Uri photoPath;
 
-    public Usuarios(String nombreUser, int numFallos) {
+    public Usuarios(String nombreUser, int numFallos, Uri photoPath) {
         super();
         this.nombreUser = nombreUser;
         this.numFallos = numFallos;
-
+        this.photoPath=photoPath;
     }
     public Usuarios() {
 
